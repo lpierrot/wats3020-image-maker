@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     color: white;
     font-family: Impact, monospace;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     position: relative;
     padding: 0.5rem;
@@ -39,12 +39,7 @@
 }
 /*Color text*/
 h1 {
-    color: black;
-}
- 
-p {
-    color: black
-
+    color: white;
 }
 /* General structure styles */
 body {

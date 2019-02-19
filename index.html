@@ -19,13 +19,29 @@
     <h1>Image Maker</h1>
     <p>Choose your settings to generate an image.</p>
     <form>
-      <p class="test">
-        <label for="topText">Top Text</label>
+      <p>
+        <label for="topTextA">Top Text</label>
         <input name="topText" placeholder="Text for top of image." value="">
       </p>
-      <p class="test">
+      <p>
+        <label for="topTextAlign">Top Text Alignment</label>
+        <select name="topTextAlign">
+          <option value="left">left</option>
+          <option value="center">center</option>
+          <option value="right">right</option>
+        </select>
+      </p>
+      <p>
         <label for="bottomText">Bottom Text</label>
         <input name="bottomText" placeholder="Text for bottom of image." value="">
+      </p>
+      <p>
+        <label for="bottomTextAlign">Bottom Text Alignment</label>
+        <select name="bottomTextAlign">
+          <option value="left">left</option>
+          <option value="center">center</option>
+          <option value="right">right</option>
+        </select>
       </p>
       <p>
         <label for="backgroundImage">Background</label>

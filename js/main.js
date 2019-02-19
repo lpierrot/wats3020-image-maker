@@ -20,14 +20,14 @@ class ImageMaker {
         // TODO: create a new `<p>` element called `this.topText`
         this.topText = document.createElement('p');
         // TODO: Add a `class` attribute to `this.topText` that contains the classname "top-text".
-        this.topText.setAttributes('class', 'top-text');
+        this.topText.setAttribute('class', 'top-text');
         // TODO: Append `this.topText` as a child element to `this.imagePreview`
         this.imagePreview.appendChild(this.topText);
 
         // TODO: create a new `<p>` element called `this.bottomText`
         this.bottomText = document.createElement('p');
         // TODO: Add a `class` attribute to `this.bottomText` that contains the classname "bottom-text".
-        this.bottomText.setAttribute('class', 'bottom text');
+        this.bottomText.setAttribute('class', 'bottom-text');
         // TODO: Append `this.bottomText` as a child element to `this.imagePreview`
         this.imagePreview.appendChild(this.bottomText);
         // This class also needs to use the form fields to read user input. Set
@@ -37,10 +37,10 @@ class ImageMaker {
         this.backgroundInput = document.forms[0].querySelector('select[name="backgroundImage"]');
 
         // TODO: Select the `input` element with the `name` attribute "topText"
-        this.topTextInput = document.forms[0].querySelector('select[name="topText"]');
+        this.topTextInput = document.forms[0].querySelector('input[name="topText"');
 
         // TODO: Select the `input` element with the `name` attribute "bottomText"
-        this.bottomTextInput = document.forms[0].querySelector('select[name="bottomText"]');
+        this.bottomTextInput = document.forms[0].querySelector('input[name="bottomText"');
 
         // NOTE: If you add additional form fields to modify other aspects of
         // the image, then you will need to make attributes for each of those
@@ -54,11 +54,11 @@ class ImageMaker {
         // update `this.imagePreview`.
 
         // TODO: Update the `background-image` CSS property for `this.imagePreview`.
-
+        this.imagePreview.style.backgroundImage = `url("images/${this.backgroundInput.value}")`
         // TODO: Update the `innerHTML` of `this.topText`.
-
+        this.topText.innerHTML = this.topTextInput.value;
         // TODO: Update the `innerHTML` of `this.bottomText`
-
+        this.bottomText.innerHTML = this.bottomTextInput.value;
 
     }
     downloadImage() {
